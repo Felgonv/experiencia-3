@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>GroupCero</title>
+    <link rel="stylesheet" href="{% static 'estilos/galeria.css' %}">
+    <link rel="icon" href="{% static 'imagenes/loguito.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-brush"></i><span class="text-warning">Group</span>Cero</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'galeria' %}">Nuestra Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'trabajo' %}">Trabaja Con Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'Producto' %}">Tienda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+    <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro1.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Explosión de Colores</h2>
+          <p class="card_descripcion">Aquí es donde la magia ocurre...</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro2.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">El Grito</h2>
+          <p class="card_descripcion">Cuando toda esperanza se ve mermada</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro3.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Libertad Psicodelica</h2>
+          <p class="card_descripcion">Diversidad de colores al aire libre</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro4.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Paralelismo</h2>
+          <p class="card_descripcion">Todo sigue un curso predestinado</p>
+        </figcaption>
+      </figure>
+    </div>
+      
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro5.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Esperando su llegada</h2>
+          <p class="card_descripcion">Cuadro hecho con acrílico que refleja la esperanza de que vuelva su amado</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro6.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Dama de la fortuna</h2>
+          <p class="card_descripcion">La bella dama de la fortuna siempre nos sonríe</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro7.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">No te puedes esconder</h2>
+          <p class="card_descripcion">Donde quiera que te escondas siempre habrá alguien acechando por ti</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro8.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Morfología Vegetal</h2>
+          <p class="card_descripcion">No es lo más agradable pero ahí está </p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <figure class="card">
+        <img src="{% static 'imagenes/cuadro10.jpg' %}" alt="..." class="card_imagen" />
+        <figcaption class="card_body">
+          <h2 class="card_titulo">Cena en noche vieja</h2>
+          <p class="card_descripcion">Cenar en un lugar cómodo siempre es algo grato de ver...</p>
+        </figcaption>
+      </figure>
+    </div>
+    </div>
+    </div>
+
+
+
+
+      <footer class="footer">
+          <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                  <p>“@copyright Derechos reservados</p>
+                    <h4>Síguenos en nuestras redes</h4>
+                    <div class="social-link">
+                        <a href="https://es-la.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="https://cl.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+      </footer>
+</body>
+</html>
